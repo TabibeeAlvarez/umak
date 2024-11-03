@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mobile Responsive</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="shortcut icon" href="pic1.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	
+</head>
+<body>
+	<nav>
+		<img src="olfu-logo.png" alt="NAV IMAGE">
+		<ul>
+			<li>
+				<a id="bars"><i class="fa-solid fa-bars"></i><a>
+			</li>
+		</ul>
+	</nav>
+	
+	<div id="burger" class="burger">
+		<div class="header-burger">
+			<button id="ex"><i class="fa-solid fa-x"></i></button>
+		</div>
+		<div class="inside-burger">
+			<ul>
+				<li>
+					<a href="#">HOME</a>
+					<a href="#">About</a>
+					<a href="#">Menu</a>
+					<a href="#">Setting</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<section class="section1">
+		<div class="center-logo">
+			<div class="inside-center-logo">
+				<img src="olfu-center-logo.png" alt="tite">
+				<button>APPLY NOW!</button>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section2">
+		<div class="section2-item">
+			<div class="item-inside">
+				<h1>OLFU</h1>
+				<P>Welcome To The Top Notchers School!</P>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<div class="item-list">
+			<ul>
+				<li>
+					<p>- We have a 5 courses in the school!</p>
+					<p>- With over 50 years of successfully developing Achievers</p>
+					<p>- Incomparable School to the other school!</p>
+					<p>- We offer good and quality teaching</p>
+					<p>- We have many Esport, Sports etc in the school</p>
+					<p>- We conduct yearly drug test for the students</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<script>
+		const bars = document.getElementById("bars")
+		bars.addEventListener('click', function(){
+			document.getElementById("burger").style.transform = "translateX(135px)";
+			document.body.classList.add('no-scroll');
+		})
+		
+		const ex = document.getElementById("ex")
+		ex.addEventListener('click', function(){
+			document.getElementById("burger").style.transform = "translate(355px)";
+			document.body.classList.remove('no-scroll');
+		})
+	</script>
+</body>
+</html>
